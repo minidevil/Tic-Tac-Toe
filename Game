@@ -40,8 +40,6 @@ def row_win(board, player):
 			return(win)
 	return(win)
 
-# Checks whether the player has three
-# of their marks in a vertical row
 def col_win(board, player):
 	for x in range(len(board)):
 		win = True
@@ -55,8 +53,7 @@ def col_win(board, player):
 			return(win)
 	return(win)
 
-# Checks whether the player has three
-# of their marks in a diagonal row
+
 def diag_win(board, player):
 	win = True
 	y = 0
@@ -89,7 +86,7 @@ def evaluate(board):
 		winner = -1
 	return winner
 
-# Main function to start the game
+
 def play_game():
 	board, winner, counter = create_board(), 0, 1
 	print(board)
@@ -109,3 +106,4 @@ def play_game():
 
 
 print("Winner is: " + str(play_game()))
+print("Game")
