@@ -104,4 +104,5 @@ def play_game():
 
 
 print("Winner is: " + str(play_game()))
+print("_____________________________")
 print("Game Over")
